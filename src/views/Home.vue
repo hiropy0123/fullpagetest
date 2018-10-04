@@ -7,6 +7,12 @@
           First section ...
         </div>
         <div class="section">
+          <div class="slide"> Slide 1 </div>
+          <div class="slide"> Slide 2 </div>
+          <div class="slide"> Slide 3 </div>
+          <div class="slide"> Slide 4 </div>
+        </div>
+        <div class="section">
           <button class="prev" @click="$refs.fullpage.api.moveSectionUp()">Prev</button>
           Second section ...
         </div>
@@ -29,9 +35,14 @@ export default {
     return {
       options: {
         menu: '#menu',
-        anchors: ['page1', 'page2', 'page3'],
-        sectionsColor: ['#38caca', '#ff5f45', '#0798ec'],
+        anchors: ['page1', 'page2', 'page3', 'page4'],
+        sectionsColor: ['#38caca', '#ff5f45', '#0798ec', '#9728ec'],
         controlArrows: true,
+        navigation: false,
+        navigationPosition: 'right',
+        scrollHorizontally: true,
+        continuousHorizontal: true,
+        dragAndMove: true,
       },
     }
   },
@@ -42,12 +53,6 @@ export default {
 
 
 <style lang="scss" scoped>
-.section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 30px;
-  width: 100%;
-}
+
 
 </style>

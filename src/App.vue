@@ -19,6 +19,8 @@ export default {
 }
 </script>
 
+<style src="fullpage.js/dist/fullpage.min.css"></style>
+
 <style>
 body, html {
   margin: 0;
@@ -28,5 +30,7 @@ body, html {
 .fp-tableCell {
   display: flex;
   align-items: center;
+  justify-content: center;
+  font-size: 32px;
 }
 </style>
